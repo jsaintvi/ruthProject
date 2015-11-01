@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'contacts/new'
+
+  get 'contacts/create'
+
+  devise_for :admins
   get '/profile' => 'pages#profile'
 
+  get '/contacts' => 'contacts#new'
+
+  resources 'contacts', only: [:new, :create]
   # get 'resumes/index'
   #
   # get 'resumes/new'

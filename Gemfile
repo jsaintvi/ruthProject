@@ -54,3 +54,11 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 #simple_form (easy form setting)
 gem 'simple_form'
+
+
+#user auth
+gem 'devise'
+
+#mail handling
+gem 'mail_form'
+
