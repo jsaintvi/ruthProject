@@ -1,6 +1,4 @@
 class ResumesController < ApplicationController
-
-    before_action :authenticate_admin!, only: [:new, :create, :destroy]
     def index
       @resumes = Resume.all
     end
