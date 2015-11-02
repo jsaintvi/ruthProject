@@ -20,7 +20,7 @@
         <li> <%= link_to "Portfolio", '#' %> </li>
         <li><%= link_to "Contact",contacts_path  %></li>
         <% if !current_admin %>
-            <li> <%= link_to "Log In", admin_session_path %> </li>
+            <li> <%= link_to "Log In", new_admin_session_path %> </li>
         <% end %>
         <% if current_admin %>
         <li class="dropdown">
